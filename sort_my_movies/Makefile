@@ -1,26 +1,30 @@
 ##
-## Makefile for  in /home/mex/astekance/LCTU/strlen
+## Makefile for  in /home/mex/astekance/Live-Coding-Units-Tests/sort_my_movies
 ## 
 ## Made by MextheGoodGuy
 ## Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ## 
-## Started on  Mon Apr  9 11:50:15 2018 MextheGoodGuy
-## Last update Tue Apr 10 17:48:32 2018 MextheGoodGuy
+## Started on  Tue Apr 10 17:54:24 2018 MextheGoodGuy
+## Last update Wed Apr 11 07:21:53 2018 MextheGoodGuy
 ##
 
 CC		= gcc
 
-NAME		= my_strlen
+NAME		= sort_my_collection
 
 TESTSDIR	= ./tests/
 
+SRCSDIR		= ./sources/
+
 CFLAGS		+= -W -Wall -Wextra
 
-TESTS		= $(TESTSDIR)tests.c \
-		  my_strlen.c
+CPPFLAGS	+= -I includes/
 
-SRCS		= main.c \
-		  my_strlen.c
+TESTS		= $(TESTSDIR)tests.c \
+		  $(SRCSDIR)sort_my_movies.c
+
+SRCS		= $(SRCSDIR)sort_my_movies.c \
+		  $(SRCSDIR)main.c
 
 TESTSOBJS	= $(TESTS:.c=.o)
 
