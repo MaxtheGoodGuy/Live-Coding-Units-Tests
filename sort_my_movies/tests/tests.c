@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Mon Apr  9 11:13:09 2018 MextheGoodGuy
-** Last update Wed Apr 11 08:03:47 2018 MextheGoodGuy
+** Last update Wed Apr 11 08:14:09 2018 MextheGoodGuy
 */
 
 #include <criterion/criterion.h>
@@ -35,7 +35,7 @@ Test(sort_my_movies, find_film)
 
 Test(sort_my_movies, fail_find_film)
 {
-  cr_assert_eq(find_by_title("La tour montparnasse infernale", g_collection), NULL);
+  cr_assert_str_eq(find_by_title("La tour montparnasse infernale", g_collection), "nope");
 }
 
 Test(sort_my_movies, display_collection_no_film, .init = redirect_all_std)

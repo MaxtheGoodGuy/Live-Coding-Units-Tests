@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Tue Apr 10 18:02:59 2018 MextheGoodGuy
-** Last update Wed Apr 11 08:02:40 2018 MextheGoodGuy
+** Last update Wed Apr 11 08:13:08 2018 MextheGoodGuy
 */
 
 #include <string.h>
@@ -28,7 +28,7 @@ const char*	find_by_title(const char* film_name, const char * const* collection)
       if (!strcmp(collection[i], film_name))
 	return (film_name);
     }
-  return (NULL);
+  return ("nope");
 }
 
 void	display_film(const char* film_name, const char* const* collection)
