@@ -5,7 +5,7 @@
 ## Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ## 
 ## Started on  Tue Apr 10 17:54:24 2018 MextheGoodGuy
-## Last update Wed Apr 11 07:21:53 2018 MextheGoodGuy
+## Last update Wed Apr 11 07:38:36 2018 MextheGoodGuy
 ##
 
 CC		= gcc
@@ -20,8 +20,8 @@ CFLAGS		+= -W -Wall -Wextra
 
 CPPFLAGS	+= -I includes/
 
-TESTS		= $(TESTSDIR)tests.c \
-		  $(SRCSDIR)sort_my_movies.c
+TESTS		= $(SRCSDIR)sort_my_movies.c \
+		  $(TESTSDIR)tests.c \
 
 SRCS		= $(SRCSDIR)sort_my_movies.c \
 		  $(SRCSDIR)main.c
