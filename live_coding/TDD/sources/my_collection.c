@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Wed Apr 11 08:11:27 2018 MextheGoodGuy
-** Last update Thu Apr 12 11:34:12 2018 MextheGoodGuy
+** Last update Thu Apr 12 16:56:10 2018 MextheGoodGuy
 */
 
 #include <string.h>
@@ -15,7 +15,7 @@ const char* g_collection[5] = {"The Empire Strikes Back",
 			       "Submarine",
 			       "The Wind Rises",
 			       "Inception",
-			       NULL};
+			       "The Flash"};
 
 const char* find_by_title(const char* title, const char * const* collection)
 {
@@ -28,7 +28,7 @@ const char* find_by_title(const char* title, const char * const* collection)
 
 void	display_film(const char* title, const char * const* collection)
 {
-  for (int i = 0; collection[i]; ++i)
+  for (unsigned int i = 0; i < sizeof(g_collection) / sizeof(char*); ++i)
     {
       if (!strcmp(collection[i], title))
 	printf("%s\n", title);
