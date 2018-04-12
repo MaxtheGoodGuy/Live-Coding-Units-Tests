@@ -1,20 +1,28 @@
 # Live-Coding-Units-Tests
-Files used in a talk/live-coding I gave at Epitech Paris about Units Tests, Criterion, Coverage, and TDD (Test Driven Development)
+Files used in a talk/live-coding I gave at __Epitech Paris__ about __Units Tests__, __Criterion__, __Coverage__, and __TDD__ (__Test Driven Development__).
 
-If you want more examples on how to use Criterion you can look up at Geographer's source code from one of his talks.
+If you want more examples on how to use __Criterion__ you can look up at __Geographer__'s source code from one of his talks.
+
+# USAGE
+
+#### Go into the right folder then you got two choices :
+
+* __make__ : build and exec tests made "by hand".
+
+* __make tests_run__ : build and exec units tests made with Criterion.
 
 # live_coding
 
-Files used and created during the live-coding.
+Files used and created __during the live-coding__.
 
 # live_coding_test
 
-Files used and created ahead of the live-coding.
+Files used and created __ahead of the live-coding__.
 
 # ppt
-PowerPoint used during the talk.
+__PowerPoint__ used during the talk.
 
 # Links
-[Criterion](https://github.com/Snaipe/Criterion)
+[Criterion](https://github.com/Snaipe/Criterion).
 
-[Geographer's repository on Criterion and Units Tests](https://github.com/Geospace/structure-build-test)
+[Geographer's repository on Criterion and Units Tests](https://github.com/Geospace/structure-build-test).
