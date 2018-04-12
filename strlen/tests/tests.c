@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Mon Apr  9 11:13:09 2018 MextheGoodGuy
-** Last update Mon Apr  9 12:30:21 2018 MextheGoodGuy
+** Last update Wed Apr 11 10:20:02 2018 MextheGoodGuy
 */
 
 #include <signal.h>
@@ -25,7 +25,7 @@ Test(my_strlen, strlen_cmp)
   cr_assert_eq(my_strlen("Hello"), strlen("Hello"));
 }
 
-Test(my_strlen, segfault, .signal = SIGSEGV)
+Test(my_strlen, segfault)
 {
-  my_strlen(NULL);
+  cr_assert_eq(my_strlen(NULL), 0);
 }

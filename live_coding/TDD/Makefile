@@ -5,7 +5,7 @@
 ## Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ## 
 ## Started on  Wed Apr 11 08:08:16 2018 MextheGoodGuy
-## Last update Wed Apr 11 08:08:36 2018 MextheGoodGuy
+## Last update Thu Apr 12 11:33:29 2018 MextheGoodGuy
 ##
 
 CC		= gcc
@@ -30,7 +30,7 @@ TESTSOBJS	= $(TESTS:.c=.o)
 
 OBJS		= $(SRCS:.c=.o)
 
-LDFLAGS		= -lcriterion --coverage
+LDFLAGS		= -lcriterion
 
 all :		$(NAME)
 
@@ -38,14 +38,15 @@ $(NAME) :	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS)
 
 tests_run :	$(TESTSOBJS)
-		$(CC) -o units_tests $(TESTSOBJS) $(LDFLAGS)
+		$(CC) -o units_tests $(TESTSOBJS) $(LDFLAGS) --coverage
 		./units_tests
 
 clean :
 		$(RM) $(OBJS)
 		$(RM) $(TESTSOBJS)
-		$(RM) *.gcda
-		$(RM) *.gcno
+		$(RM) $(SRCSDIR)*.gcda $(TESTSDIR)*.gcda
+		$(RM) $(SRCSDIR)*.gcda $(TESTSDIR)*.gcno 
+		$(RM) *.gcov
 
 fclean :	clean
 		$(RM) $(NAME)

@@ -1,3 +1,4 @@
+
 ##
 ## Makefile for  in /home/mex/astekance/LCTU/strlen
 ## 
@@ -5,7 +6,7 @@
 ## Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ## 
 ## Started on  Mon Apr  9 11:50:15 2018 MextheGoodGuy
-## Last update Wed Apr 11 08:06:21 2018 MextheGoodGuy
+## Last update Thu Apr 12 11:48:08 2018 MextheGoodGuy
 ##
 
 CC		= gcc
@@ -28,7 +29,7 @@ TESTSOBJS	= $(TESTS:.c=.o)
 
 OBJS		= $(SRCS:.c=.o)
 
-LDFLAGS		= -lcriterion --coverage
+LDFLAGS		= -lcriterion
 
 all :		$(NAME)
 
@@ -36,14 +37,15 @@ $(NAME) :	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS)
 
 tests_run :	$(TESTSOBJS)
-		$(CC) -o units_tests $(TESTSOBJS) $(LDFLAGS)
+		$(CC) -o units_tests $(TESTSOBJS) --coverage $(LDFLAGS)
 		./units_tests
 
 clean :
 		$(RM) $(OBJS)
 		$(RM) $(TESTSOBJS)
-		$(RM) *.gcda
-		$(RM) *.gcno
+		$(RM) $(SRCSDIR)*.gcda $(TESTSDIR)*.gcda
+		$(RM) $(SRCSDIR)*.gcno $(TESTSDIR)*.gcno
+		$(RM) *.gcov
 
 fclean :	clean
 		$(RM) $(NAME)
