@@ -30,7 +30,7 @@ TESTSOBJS	= $(TESTS:.c=.o)
 
 OBJS		= $(SRCS:.c=.o)
 
-LDFLAGS		= -lcriterion --coverage
+LDFLAGS		= -lcriterion
 
 all :		$(NAME)
 
@@ -38,7 +38,7 @@ $(NAME) :	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS)
 
 tests_run :	$(TESTSOBJS)
-		$(CC) -o units_tests $(TESTSOBJS) $(LDFLAGS)
+		$(CC) -o units_tests $(TESTSOBJS) --coverage $(LDFLAGS)
 		./units_tests
 
 clean :
