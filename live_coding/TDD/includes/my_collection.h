@@ -5,13 +5,18 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Tue Apr 10 17:56:49 2018 MextheGoodGuy
-** Last update Wed Apr 11 11:14:53 2018 MextheGoodGuy
+** Last update Thu Apr 12 18:27:47 2018 MextheGoodGuy
 */
 
 #ifndef MY_COLLECTION_H_
 # define MY_COLLECTION_H_
 
 #include <stdio.h>
+
+# define RED    "\x1b[31m"
+# define GREEN  "\x1b[32m"
+# define BLUE   "\x1b[36m"
+# define RESET  "\x1b[0m"
 
 const char*	find_by_title(const char* title, const char * const* collection);
 

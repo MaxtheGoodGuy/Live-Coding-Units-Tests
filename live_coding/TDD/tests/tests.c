@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Wed Apr 11 08:11:15 2018 MextheGoodGuy
-** Last update Thu Apr 12 11:33:50 2018 MextheGoodGuy
+** Last update Thu Apr 12 18:48:30 2018 MextheGoodGuy
 */
 
 #include <criterion/criterion.h>
@@ -18,7 +18,7 @@ void	redirect_all_std(void)
   cr_redirect_stderr();
 }
 
-Test(my_collection, empty_names)
+Test(my_collection, empty_name)
 {
   cr_assert_eq(find_by_title(NULL, g_collection), NULL);
 }

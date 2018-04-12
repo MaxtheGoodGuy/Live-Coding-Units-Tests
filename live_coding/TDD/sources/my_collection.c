@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Wed Apr 11 08:11:27 2018 MextheGoodGuy
-** Last update Thu Apr 12 16:56:10 2018 MextheGoodGuy
+** Last update Thu Apr 12 18:49:05 2018 MextheGoodGuy
 */
 
 #include <string.h>

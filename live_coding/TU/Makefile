@@ -6,7 +6,7 @@
 ## Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ## 
 ## Started on  Mon Apr  9 11:50:15 2018 MextheGoodGuy
-## Last update Thu Apr 12 11:48:08 2018 MextheGoodGuy
+## Last update Thu Apr 12 18:47:35 2018 MextheGoodGuy
 ##
 
 CC		= gcc
@@ -18,6 +18,8 @@ SRCSDIR		= ./sources/
 TESTSDIR	= ./tests/
 
 CFLAGS		+= -W -Wall -Wextra
+
+CPPFLAGS	+= -I include/
 
 TESTS		= $(TESTSDIR)tests.c \
 		  $(SRCSDIR)my_strlen.c
@@ -35,6 +37,7 @@ all :		$(NAME)
 
 $(NAME) :	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS)
+		./my_strlen
 
 tests_run :	$(TESTSOBJS)
 		$(CC) -o units_tests $(TESTSOBJS) --coverage $(LDFLAGS)

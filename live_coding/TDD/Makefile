@@ -5,7 +5,7 @@
 ## Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ## 
 ## Started on  Wed Apr 11 08:08:16 2018 MextheGoodGuy
-## Last update Thu Apr 12 11:33:29 2018 MextheGoodGuy
+## Last update Thu Apr 12 18:28:29 2018 MextheGoodGuy
 ##
 
 CC		= gcc
@@ -36,6 +36,7 @@ all :		$(NAME)
 
 $(NAME) :	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS)
+		./my_collection
 
 tests_run :	$(TESTSOBJS)
 		$(CC) -o units_tests $(TESTSOBJS) $(LDFLAGS) --coverage
