@@ -5,7 +5,7 @@
 ** Login   <maximilien.oteifeh-pfennig@epitech.eu>
 ** 
 ** Started on  Wed Apr 11 10:46:32 2018 MextheGoodGuy
-** Last update Thu Apr 12 18:47:24 2018 MextheGoodGuy
+** Last update Thu May  3 16:04:50 2018 MextheGoodGuy
 */
 
 #include <string.h>
@@ -14,7 +14,7 @@
 
 Test(my_strlen, return_value)
 {
-  cr_assert_eq(my_strlen("lel"), 3);
+  cr_assert_eq(my_strlen("lel"), 2);
 }
 
 Test(my_strlen, strlen)
